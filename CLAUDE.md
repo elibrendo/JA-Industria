@@ -8,7 +8,7 @@ Site institucional da **JA Indústria Ltda.**, fabricante de reservatórios met�
 index.html            página inicial
 css/style.css         todos os estilos
 js/main.js            menu do celular, animações de entrada e carrossel
-assets/img/           logo, fotos e capa do vídeo
+assets/img/           logo, fotos e capa do vídeo (clientes/ = logos dos clientes)
 assets/video/         vídeo de fundo do banner (MP4 H.264, sem áudio)
 ```
 
@@ -23,6 +23,10 @@ Site estático: HTML, CSS e JavaScript puros, sem framework e sem build.
 | `--azul-claro`   | `#8FB3FF` | destaques, linhas, ícones             |
 | `--branco`       | `#FFFFFF` | títulos e botão principal             |
 | `--texto-suave`  | `#C6CDE0` | textos corridos                       |
+| `--azul-medio`   | `#2F5BC4` | destaques sobre fundo claro           |
+| `--gelo`         | `#F3F5FA` | fundo das seções claras (Diferenciais) |
+| `--tinta`        | `#16234A` | títulos sobre fundo claro             |
+| `--cinza`        | `#5B6684` | texto corrido sobre fundo claro       |
 
 Fontes (Google Fonts): **Barlow Condensed** nos títulos e botões, **Barlow** no texto, **Lora itálico** em slogans e citações.
 
@@ -38,13 +42,15 @@ Sempre use as variáveis de `:root` em `css/style.css`, nunca cores soltas.
 
 ## Seções prontas
 
-1. Cabeçalho fixo (logo + menu + "Solicitar orçamento")
+1. Cabeçalho fixo (logo + menu com submenu de Produtos ao passar o mouse + telefone)
 2. Banner com vídeo de fundo ("Indústria de confiança")
 3. História & Trajetória (texto + carrossel com fundação, 30 anos e diretores)
 4. Resultados (+7000 projetos entregues)
+5. Diferenciais ("Por que escolher a JA", fundo claro)
+6. Produtos (5 cartões que se expandem + ficha técnica, `#servicos`)
+7. Clientes (duas faixas de logos rolando)
+8. Contato + rodapé
 
 ## Próximos passos
 
-- Seção de produtos
-- Contato / rodapé
 - Páginas internas (Sobre, Produtos, Contato)

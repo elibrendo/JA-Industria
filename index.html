@@ -21,11 +21,24 @@
     </a>
     <button class="abrir-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
     <nav class="menu" id="menu" aria-label="Principal">
-      <a href="#">Produtos<span class="seta" aria-hidden="true">▾</span></a>
-      <a href="#">Serviços</a>
-      <a href="#">Contato</a>
-      <a href="#">Sobre</a>
-      <a href="#" class="btn-orcamento">35 999232020</a>
+      <!-- Produtos: abre o submenu ao passar o mouse (no celular, ao tocar). -->
+      <div class="item-sub">
+        <a href="#produtos" aria-haspopup="true" aria-expanded="false">Produtos<span class="seta" aria-hidden="true">▾</span></a>
+        <div class="submenu">
+          <div class="submenu-caixa">
+            <a href="#produto-vertical"><small>01</small>Tubular vertical apoiado</a>
+            <a href="#produto-fundo-reto"><small>02</small>Tubular fundo reto</a>
+            <a href="#produto-fundo-conico"><small>03</small>Tubular fundo cônico</a>
+            <a href="#produto-fnde"><small>04</small>Reservatório FNDE / FDE</a>
+            <a href="#produto-taca"><small>05</small>Taça coluna seca</a>
+            <a href="#produtos" class="ver-todos">Ver todos os produtos <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+      <a href="#historia">Sobre</a>
+      <a href="#" class="btn-orcamento">(35) 99837-4797</a>
     </nav>
   </div>
 </header>
@@ -180,6 +193,238 @@
     </div>
   </div>
 </section>
+
+<!-- Seção Diferenciais: por que escolher a JA. -->
+<section class="diferenciais" id="diferenciais">
+  <div class="dif-inner">
+    <div class="dif-topo">
+      <div>
+        <div class="chamada revela">Por que escolher a JA</div>
+        <h2 class="revela" style="--d:.12s">Construída na confiança. <span class="destaque">Movida pela precisão.</span></h2>
+      </div>
+      <p class="citacao revela" style="--d:.24s">"Desde 1997 sustentando grandes projetos em todo o Brasil."</p>
+    </div>
+
+    <!-- Lista numerada dos diferenciais; o ícone de check se desenha ao aparecer. -->
+    <ol class="dif-lista">
+      <li class="revela" style="--d:.05s"><span class="num">01</span><svg class="check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.6 2.6L16 9.6"/></svg><p><strong>Garantia de 5 anos</strong> — para toda a nossa linha de produtos</p></li>
+      <li class="revela" style="--d:.15s"><span class="num">02</span><svg class="check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.6 2.6L16 9.6"/></svg><p><strong>Orçamento rápido</strong> — equipe especializada e proposta personalizada</p></li>
+      <li class="revela" style="--d:.25s"><span class="num">03</span><svg class="check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.6 2.6L16 9.6"/></svg><p><strong>Equipe de engenharia</strong> — acompanha do projeto até a instalação</p></li>
+      <li class="revela" style="--d:.35s"><span class="num">04</span><svg class="check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.6 2.6L16 9.6"/></svg><p><strong>Certificação de potabilidade</strong> — tinta do revestimento interno certificada</p></li>
+      <li class="revela" style="--d:.45s"><span class="num">05</span><svg class="check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.6 2.6L16 9.6"/></svg><p><strong>Frota própria</strong> — entregamos na sua localidade</p></li>
+      <li class="revela" style="--d:.55s"><span class="num">06</span><svg class="check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.6 2.6L16 9.6"/></svg><p><strong>Produto seguro</strong> — fabricado conforme as normas da ABNT</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- Seção Produtos: cartões que se expandem ao passar o mouse + ficha técnica. -->
+<section class="produtos" id="produtos">
+  <div class="prod-inner">
+    <div class="prod-topo">
+      <div>
+        <div class="chamada revela">Linha de produtos</div>
+        <h2 class="revela" style="--d:.12s">Nossos <span class="destaque">reservatórios</span></h2>
+      </div>
+      <p class="revela" style="--d:.24s">Reservatórios metálicos de alta performance para aplicações industriais, comerciais, rurais e governamentais, seguindo rigorosamente as normas técnicas vigentes.</p>
+    </div>
+
+    <div class="prod-cards">
+      <article class="prod ativo revela" id="produto-vertical" tabindex="0">
+        <img src="assets/img/prod-vertical-apoiado.jpg" alt="Reservatório tubular vertical branco instalado sobre base de concreto" loading="lazy">
+        <span class="prod-num">01</span>
+        <div class="prod-info">
+          <small>Reservatório tubular</small>
+          <h3>Vertical apoiado</h3>
+          <div class="prod-desc"><div>
+            <p>Para água potável, água industrial e combate a incêndio. Estrutura robusta instalada direto sobre base de concreto, com estabilidade, fácil manutenção e longa vida útil.</p>
+            <a href="#contato" class="prod-link">Solicitar orçamento <span aria-hidden="true">→</span></a>
+          </div></div>
+        </div>
+      </article>
+
+      <article class="prod revela" id="produto-fundo-reto" style="--d:.1s" tabindex="0">
+        <img src="assets/img/reservatorio.jpg" alt="Reservatório tubular de fundo reto com escada e guarda-corpo amarelos" loading="lazy">
+        <span class="prod-num">02</span>
+        <div class="prod-info">
+          <small>Reservatório tubular</small>
+          <h3>Fundo reto</h3>
+          <div class="prod-desc"><div>
+            <p>Para aplicações que exigem maior controle operacional. Com ou sem divisão de células, permitindo manutenção sem interromper todo o abastecimento.</p>
+            <a href="#contato" class="prod-link">Solicitar orçamento <span aria-hidden="true">→</span></a>
+          </div></div>
+        </div>
+      </article>
+
+      <article class="prod revela" id="produto-fundo-conico" style="--d:.2s" tabindex="0">
+        <img src="assets/img/prod-fundo-conico.webp" alt="Reservatórios tubulares com fundo cônico prontos para entrega" loading="lazy">
+        <span class="prod-num">03</span>
+        <div class="prod-info">
+          <small>Reservatório tubular</small>
+          <h3>Fundo cônico</h3>
+          <div class="prod-desc"><div>
+            <p>Ideal para quem precisa de drenagem total: facilita a limpeza interna, evita acúmulo de resíduos e garante mais eficiência operacional.</p>
+            <a href="#contato" class="prod-link">Solicitar orçamento <span aria-hidden="true">→</span></a>
+          </div></div>
+        </div>
+      </article>
+
+      <article class="prod revela" id="produto-fnde" style="--d:.3s" tabindex="0">
+        <img src="assets/img/foto-2.jpg" alt="Fabricação de reservatório metálico no galpão da JA" loading="lazy">
+        <span class="prod-num">04</span>
+        <div class="prod-info">
+          <small>Programas governamentais</small>
+          <h3>FNDE / FDE</h3>
+          <div class="prod-desc"><div>
+            <p>Desenvolvido conforme as exigências dos programas governamentais, atendendo escolas e instituições públicas com segurança estrutural e qualidade.</p>
+            <a href="#contato" class="prod-link">Solicitar orçamento <span aria-hidden="true">→</span></a>
+          </div></div>
+        </div>
+      </article>
+
+      <article class="prod revela" id="produto-taca" style="--d:.4s" tabindex="0">
+        <img src="assets/img/prod-taca.jpg" alt="Reservatório taça coluna seca sendo instalado ao lado de um reservatório apoiado" loading="lazy">
+        <span class="prod-num">05</span>
+        <div class="prod-info">
+          <small>Distribuição por gravidade</small>
+          <h3>Taça coluna seca</h3>
+          <div class="prod-desc"><div>
+            <p>Sistema eficiente para distribuir água por gravidade, garantindo pressão adequada e menor custo de manutenção.</p>
+            <a href="#contato" class="prod-link">Solicitar orçamento <span aria-hidden="true">→</span></a>
+          </div></div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Ficha técnica (conteúdo da página Serviços). -->
+    <div class="ficha" id="servicos">
+      <div class="ficha-titulo revela">
+        <div class="chamada">Características técnicas</div>
+        <p>Soluções completas em estruturas metálicas para empreendimentos industriais e comerciais de grande porte.</p>
+      </div>
+      <dl class="ficha-itens">
+        <div class="revela" style="--d:.05s"><dt>Soldagem</dt><dd>Processo GMAW (MIG) para máxima resistência e durabilidade</dd></div>
+        <div class="revela" style="--d:.15s"><dt>Anticorrosivo</dt><dd>Jateamento abrasivo padrão SA 2½</dd></div>
+        <div class="revela" style="--d:.25s"><dt>Pintura</dt><dd>Primer epóxi poliamina e acabamento em poliuretano acrílico alifático</dd></div>
+        <div class="revela" style="--d:.35s"><dt>Certificações</dt><dd>Normas do Ministério da Saúde e Diretiva RoHS</dd></div>
+        <div class="revela" style="--d:.45s"><dt>Carga máxima</dt><dd><b>150 ton/m²</b> com dimensões sob medida</dd></div>
+      </dl>
+      <ul class="aplicacoes revela" aria-label="Aplicações">
+        <li>Água potável</li><li>Combate a incêndio</li><li>Águas pluviais</li><li>Construção civil e obras públicas</li><li>Agricultura e irrigação</li><li>Setor industrial</li><li>Reservas ambientais</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Seção Clientes: duas faixas de logos rolando em sentidos opostos. -->
+<section class="clientes" id="clientes">
+  <div class="cli-inner">
+    <div class="chamada revela">Quem confia na JA</div>
+    <h2 class="revela" style="--d:.12s">Nossos <span class="destaque">clientes</span></h2>
+    <p class="revela" style="--d:.24s">Algumas das muitas empresas que escolheram confiar em nossos produtos.</p>
+  </div>
+
+  <!-- Cada trilho tem os logos duas vezes (a cópia é decorativa) para a rolagem não ter emenda. -->
+  <div class="faixa revela" style="--d:.3s">
+    <div class="trilho">
+      <div class="logos">
+        <span class="logo-cli"><img src="assets/img/clientes/weg.png" alt="WEG"></span>
+        <span class="logo-cli"><img src="assets/img/clientes/cooxupe.png" alt="Cooxupé"></span>
+        <span class="logo-cli"><img src="assets/img/clientes/copasa.png" alt="Copasa"></span>
+        <span class="logo-cli"><img src="assets/img/clientes/pemi.png" alt="Pemi Construtora"></span>
+        <span class="logo-cli"><img src="assets/img/clientes/medtronic.png" alt="Medtronic"></span>
+        <span class="logo-cli"><img src="assets/img/clientes/cafe-silva.png" alt="Café Silva"></span>
+      </div>
+      <div class="logos" aria-hidden="true">
+        <span class="logo-cli"><img src="assets/img/clientes/weg.png" alt=""></span>
+        <span class="logo-cli"><img src="assets/img/clientes/cooxupe.png" alt=""></span>
+        <span class="logo-cli"><img src="assets/img/clientes/copasa.png" alt=""></span>
+        <span class="logo-cli"><img src="assets/img/clientes/pemi.png" alt=""></span>
+        <span class="logo-cli"><img src="assets/img/clientes/medtronic.png" alt=""></span>
+        <span class="logo-cli"><img src="assets/img/clientes/cafe-silva.png" alt=""></span>
+      </div>
+    </div>
+  </div>
+  <div class="faixa ao-contrario revela" style="--d:.4s">
+    <div class="trilho">
+      <div class="logos">
+        <span class="logo-cli"><img src="assets/img/clientes/quicke.png" alt="Quicke"></span>
+        <span class="logo-cli"><img src="assets/img/clientes/sanmariana.png" alt="SanMariana"></span>
+        <span class="logo-cli"><img src="assets/img/clientes/ana-paula.png" alt="Ana Paula Corretora e Imobiliária"></span>
+        <span class="logo-cli"><img src="assets/img/clientes/sinteprol.png" alt="Sinteprol Materiais para Construção"></span>
+        <span class="logo-cli"><img src="assets/img/clientes/fazendas-reunidas.png" alt="Fazendas Reunidas"></span>
+        <span class="logo-cli"><img src="assets/img/clientes/ferro-mais.png" alt="Ferro+"></span>
+      </div>
+      <div class="logos" aria-hidden="true">
+        <span class="logo-cli"><img src="assets/img/clientes/quicke.png" alt=""></span>
+        <span class="logo-cli"><img src="assets/img/clientes/sanmariana.png" alt=""></span>
+        <span class="logo-cli"><img src="assets/img/clientes/ana-paula.png" alt=""></span>
+        <span class="logo-cli"><img src="assets/img/clientes/sinteprol.png" alt=""></span>
+        <span class="logo-cli"><img src="assets/img/clientes/fazendas-reunidas.png" alt=""></span>
+        <span class="logo-cli"><img src="assets/img/clientes/ferro-mais.png" alt=""></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Seção Contato: canais de atendimento, produtos e números. -->
+<section class="contato" id="contato">
+  <div class="cont-inner">
+    <div class="cont-topo">
+      <div>
+        <div class="chamada revela">Fale conosco</div>
+        <h2 class="revela" style="--d:.12s">Vamos construir <span class="destaque">algo que dure.</span></h2>
+      </div>
+      <p class="citacao revela" style="--d:.24s">"Confiança que sustenta grandes projetos desde 1997."</p>
+    </div>
+
+    <div class="cont-corpo">
+      <div class="cont-canais">
+        <p class="cont-texto revela">Procurando reservatórios que unem tradição, qualidade e confiabilidade? Nossa equipe está pronta para preparar o seu orçamento personalizado.</p>
+        <dl class="canais">
+          <div class="revela" style="--d:.1s"><dt>WhatsApp</dt><dd><a href="https://wa.me/5535998374797" target="_blank" rel="noopener">(35) 99837-4797</a></dd></div>
+          <div class="revela" style="--d:.18s"><dt>Telefone</dt><dd><a href="tel:+553531150081">(35) 3115-0081</a></dd></div>
+          <div class="revela" style="--d:.26s"><dt>E-mail</dt><dd><a href="mailto:vendas@jaindustria.com">vendas@jaindustria.com</a></dd></div>
+          <div class="revela" style="--d:.34s"><dt>Endereço</dt><dd><a href="https://www.google.com/maps/place/JA+Estruturas+Met%C3%A1licas+Ltda/@-20.8351295,-46.3661231,824m" target="_blank" rel="noopener">Rodovia MG 446, km 14, Ponte Alta<br>Alpinópolis – MG · CEP 37940-000</a></dd></div>
+        </dl>
+        <div class="botoes revela" style="--d:.42s">
+          <a href="https://wa.me/5535998374797" target="_blank" rel="noopener" class="btn btn-principal">Falar no WhatsApp</a>
+          <a href="#produtos" class="btn btn-contorno">Ver produtos</a>
+        </div>
+      </div>
+
+      <div class="cont-oferta">
+        <div class="chamada revela">O que oferecemos</div>
+        <ol class="oferta">
+          <li class="revela" style="--d:.1s"><a href="#produto-vertical"><span>01</span>Tubular vertical apoiado</a></li>
+          <li class="revela" style="--d:.16s"><a href="#produto-fundo-reto"><span>02</span>Tubular fundo reto</a></li>
+          <li class="revela" style="--d:.22s"><a href="#produto-fundo-conico"><span>03</span>Tubular fundo cônico</a></li>
+          <li class="revela" style="--d:.28s"><a href="#produto-fnde"><span>04</span>Reservatório FNDE / FDE</a></li>
+          <li class="revela" style="--d:.34s"><a href="#produto-taca"><span>05</span>Taça coluna seca</a></li>
+        </ol>
+        <div class="cont-numeros revela" style="--d:.4s">
+          <div><strong data-conta="7000" data-antes="+">+7000</strong><span>Projetos entregues</span></div>
+          <div><strong data-conta="5" data-depois=" anos">5 anos</strong><span>De garantia</span></div>
+          <div><strong data-conta="1997">1997</strong><span>Fundação</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Rodapé -->
+<footer class="rodape">
+  <div class="rodape-inner">
+    <img src="assets/img/logo-ja.png" alt="JA Indústria Ltda.">
+    <nav aria-label="Rodapé">
+      <a href="#produtos">Produtos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#historia">Sobre</a>
+      <a href="https://jaestruturasmetalicas.com.br/blog/" target="_blank" rel="noopener">Blog</a>
+      <a href="https://www.instagram.com/jaindustrialtda/" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+    <small>© 2026 JA Indústria Ltda. Todos os direitos reservados.</small>
+  </div>
+</footer>
 
 <!-- Script de interações: menu mobile, animações de entrada e carrossel. -->
 <script src="js/main.js"></script>
