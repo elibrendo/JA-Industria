@@ -7,7 +7,7 @@ Site institucional da **JA Indústria Ltda.**, fabricante de reservatórios met�
 ```
 index.html            página inicial
 css/style.css         todos os estilos
-js/main.js            menu do celular, animações de entrada e carrossel
+js/main.js            menu do celular, animações de entrada e interações das seções
 assets/img/           logo, fotos e capa do vídeo (clientes/ = logos dos clientes)
 assets/video/         vídeo de fundo do banner (MP4 H.264, sem áudio)
 ```
@@ -44,7 +44,7 @@ Sempre use as variáveis de `:root` em `css/style.css`, nunca cores soltas.
 
 1. Cabeçalho fixo (logo + menu com submenu de Produtos ao passar o mouse + telefone)
 2. Banner com vídeo de fundo ("Indústria de confiança")
-3. História & Trajetória (texto + carrossel com fundação, 30 anos e diretores)
+3. História & Trajetória (texto + vídeo institucional do YouTube)
 4. Resultados (+7000 projetos entregues)
 5. Diferenciais ("Por que escolher a JA", fundo claro)
 6. Produtos (5 cartões que se expandem + ficha técnica, `#servicos`)

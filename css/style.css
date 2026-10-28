@@ -110,49 +110,12 @@
   .historia p strong{color:var(--branco);font-weight:600}
   .historia .btn{margin-top:36px}
 
-  .carrossel{flex:1 1 560px;min-width:0;position:relative}
-  .slides{position:relative;height:400px}
-  .slide{position:absolute;inset:0;display:flex;align-items:center;opacity:0;visibility:hidden;transform:translateX(40px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1),visibility .7s}
-  .slide.ativo{opacity:1;visibility:visible;transform:none}
-
-  .cartao{position:relative;z-index:2;width:64%;min-height:300px;background:var(--branco);color:var(--azul);border-radius:24px;padding:32px 36px;display:flex;align-items:center;gap:24px;box-shadow:0 30px 60px rgba(8,14,32,.35)}
-  .icone{flex:none;width:72px;height:72px;border-radius:50%;background:var(--azul);display:flex;align-items:center;justify-content:center}
-  .cartao-info{text-align:right;margin-left:auto;min-width:0}
-  .cartao-info small{display:block;font-size:17px}
-  .cartao-info strong{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:40px;line-height:1.1;color:var(--azul-medio);margin:4px 0}
-  .cartao-info span{display:block;font-size:16px;line-height:1.45}
-
-  .slide.ativo .cartao{animation:entraCartao .8s cubic-bezier(.2,.7,.2,1) both .15s}
-  @keyframes entraCartao{from{opacity:0;transform:translateX(-30px)}to{opacity:1;transform:none}}
-
-  .diretores{display:flex;flex-direction:column;gap:18px;width:100%}
-  .diretor{display:flex;align-items:center;gap:18px}
-  .diretor img{width:68px;height:68px;border-radius:50%;border:3px solid var(--azul);flex:none}
-  .diretor b{display:block;font-family:'Barlow Condensed',sans-serif;font-size:24px;font-weight:700}
-  .diretor em{display:block;font-style:normal;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--azul-medio)}
-  .diretor i{display:block;font-style:normal;font-size:14px}
-
-  .controles{display:flex;gap:20px;justify-content:center;width:64%;margin-top:28px}
-  .controles button{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--azul-claro);background:none;color:var(--azul-claro);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .25s,color .25s}
-  .controles button:hover{background:var(--azul-claro);color:var(--azul)}
-  .pontos{display:flex;gap:8px;align-items:center}
-  .pontos span{width:8px;height:8px;border-radius:50%;background:rgba(143,179,255,.35);transition:width .3s,background .3s}
-  .pontos span.on{width:24px;border-radius:4px;background:var(--azul-claro)}
-
+  .video{flex:1 1 560px;min-width:0}
+  .video-caixa{position:relative;aspect-ratio:16/9;border-radius:24px;overflow:hidden;background:var(--azul-escuro);border:1px solid rgba(143,179,255,.35);box-shadow:0 30px 60px rgba(8,14,32,.35)}
+  .video-caixa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
   @media (max-width: 700px){
     .historia-inner{padding:80px 24px;gap:48px}
-    .slides{height:auto}
-    .slide{position:relative;display:none;flex-direction:column}
-    .slide.ativo{display:flex}
-    .cartao{width:100%;min-height:0;padding:28px 24px;gap:18px}
-    .icone{width:56px;height:56px}
-    .icone svg{width:30px;height:30px}
-    .cartao-info{text-align:left;margin-left:0}
-    .cartao-info strong{font-size:34px}
-    .cartao-info span br{display:none}
-    .diretor img{width:60px;height:60px}
-    .diretor b{font-size:21px}
-    .controles{width:100%}
+    .video-caixa{border-radius:16px}
   }
 
   /* ---------- RESULTADOS ---------- */

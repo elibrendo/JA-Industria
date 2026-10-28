@@ -1,4 +1,4 @@
-// JA Indústria — menu do celular, animações de entrada e carrossel
+// JA Indústria — menu do celular, animações de entrada e interações das seções
   // menu do celular
   const botao = document.querySelector('.abrir-menu');
   const menu = document.getElementById('menu');
@@ -37,19 +37,20 @@
   }, { threshold: 0.15 });
   document.querySelectorAll('.revela').forEach((el) => observador.observe(el));
 
-  // carrossel
-  const slides = [...document.querySelectorAll('.slide')];
-  const pontos = [...document.querySelectorAll('.pontos span')];
-  let atual = 0, timer;
-  function mostra(i){
-    atual = (i + slides.length) % slides.length;
-    slides.forEach((s, n) => s.classList.toggle('ativo', n === atual));
-    pontos.forEach((p, n) => p.classList.toggle('on', n === atual));
+  // vídeo institucional: toca sozinho e mudo; em tela cheia liga o som, ao sair volta mudo
+  const quadroVideo = document.getElementById('video-ja');
+  if (quadroVideo) {
+    const apiYT = document.createElement('script');
+    apiYT.src = 'https://www.youtube.com/iframe_api';
+    document.head.appendChild(apiYT);
+    window.onYouTubeIframeAPIReady = () => {
+      const player = new YT.Player(quadroVideo);
+      document.addEventListener('fullscreenchange', () => {
+        if (document.fullscreenElement !== quadroVideo) { player.mute(); return; }
+        player.unMute(); player.setVolume(100);
+      });
+    };
   }
-  function automatico(){ clearInterval(timer); timer = setInterval(() => mostra(atual + 1), 6000); }
-  document.querySelector('.prox').addEventListener('click', () => { mostra(atual + 1); automatico(); });
-  document.querySelector('.ant').addEventListener('click', () => { mostra(atual - 1); automatico(); });
-  automatico();
 
   // cartões de produto: o último sob o mouse (ou com foco) fica aberto
   const cartoes = [...document.querySelectorAll('.prod')];
