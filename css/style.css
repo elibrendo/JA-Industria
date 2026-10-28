@@ -2,14 +2,14 @@
    JA Indústria — estilos do site
    ========================================================= */
   :root{
-    --azul: #1E305E;        /* azul da logo */
-    --azul-escuro: #121D3B;
+    --azul: #5488ed;        /* azul da logo */
+    --azul-escuro: #152647;
     --azul-claro: #8FB3FF;  /* destaque legível sobre o azul */
     --branco: #FFFFFF;
     --texto-suave: #C6CDE0;
-    --azul-medio: #2F5BC4;  /* destaque legível sobre fundos claros */
+    --azul-medio: #5488ed;  /* destaque legível sobre fundos claros */
     --gelo: #F3F5FA;        /* fundo das seções claras */
-    --tinta: #16234A;       /* títulos sobre fundo claro */
+    --tinta: #152647;       /* títulos sobre fundo claro */
     --cinza: #5B6684;       /* texto corrido sobre fundo claro */
     --largura: 1280px;
   }
@@ -46,7 +46,7 @@
   .menu .submenu a:hover{background:var(--gelo);color:var(--azul);padding-left:36px}
   .menu .submenu a:hover::before{transform:scaleY(1)}
   .submenu small{font-family:Barlow,sans-serif;font-size:11px;font-weight:600;color:var(--azul-medio)}
-  .menu .submenu a.ver-todos{margin-top:6px;padding-top:16px;border-top:1px solid rgba(30,48,94,.1);font-size:13px;letter-spacing:.2em;color:var(--azul-medio)}
+  .menu .submenu a.ver-todos{margin-top:6px;padding-top:16px;border-top:1px solid rgba(21,38,71,.1);font-size:13px;letter-spacing:.2em;color:var(--azul-medio)}
   .btn-orcamento{font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:15px;background:var(--branco);color:var(--azul);padding:12px 22px;border-radius:2px}
   .btn-orcamento:hover{background:var(--azul-claro)}
   .abrir-menu{display:none;margin-left:auto;background:none;border:1px solid rgba(255,255,255,.35);color:var(--branco);width:44px;height:44px;border-radius:2px;cursor:pointer}
@@ -56,7 +56,7 @@
   .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
   /* película azul por cima do vídeo, mais forte à esquerda para o texto ficar legível */
   .hero::after{content:"";position:absolute;inset:0;z-index:1;
-    background:linear-gradient(90deg,rgba(18,29,59,.92) 0%,rgba(18,29,59,.70) 45%,rgba(18,29,59,.30) 100%)}
+    background:linear-gradient(90deg,rgba(21,38,71,.92) 0%,rgba(21,38,71,.70) 45%,rgba(21,38,71,.30) 100%)}
   .hero-inner{position:relative;z-index:2;width:100%;max-width:var(--largura);margin:0 auto;padding:140px 24px 80px}
   .conteudo{max-width:620px}
 
@@ -119,7 +119,7 @@
   .icone{flex:none;width:72px;height:72px;border-radius:50%;background:var(--azul);display:flex;align-items:center;justify-content:center}
   .cartao-info{text-align:right;margin-left:auto;min-width:0}
   .cartao-info small{display:block;font-size:17px}
-  .cartao-info strong{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:40px;line-height:1.1;color:#2F5BC4;margin:4px 0}
+  .cartao-info strong{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:40px;line-height:1.1;color:var(--azul-medio);margin:4px 0}
   .cartao-info span{display:block;font-size:16px;line-height:1.45}
 
   .slide.ativo .cartao{animation:entraCartao .8s cubic-bezier(.2,.7,.2,1) both .15s}
@@ -129,7 +129,7 @@
   .diretor{display:flex;align-items:center;gap:18px}
   .diretor img{width:68px;height:68px;border-radius:50%;border:3px solid var(--azul);flex:none}
   .diretor b{display:block;font-family:'Barlow Condensed',sans-serif;font-size:24px;font-weight:700}
-  .diretor em{display:block;font-style:normal;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#2F5BC4}
+  .diretor em{display:block;font-style:normal;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--azul-medio)}
   .diretor i{display:block;font-style:normal;font-size:14px}
 
   .controles{display:flex;gap:20px;justify-content:center;width:64%;margin-top:28px}
@@ -186,23 +186,23 @@
   }
 
   /* ---------- TOPO DE SEÇÃO (diferenciais e contato) ---------- */
-  .dif-topo,.cont-topo{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:32px 64px;padding-bottom:48px;border-bottom:1px solid rgba(30,48,94,.12)}
+  .dif-topo,.cont-topo{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:32px 64px;padding-bottom:48px;border-bottom:1px solid rgba(21,38,71,.12)}
   .dif-topo h2,.cont-topo h2,.prod-topo h2,.cli-inner h2{margin:22px 0 0;font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(42px,5.6vw,76px);line-height:.92;text-wrap:balance}
   .dif-topo h2 .destaque,.cont-topo h2 .destaque{display:block}
   .citacao{margin:0;max-width:300px;padding-left:20px;border-left:2px solid var(--azul-medio);font-family:Lora,Georgia,serif;font-style:italic;font-size:19px;line-height:1.6;color:var(--cinza)}
 
   /* ---------- DIFERENCIAIS ---------- */
   .diferenciais{position:relative;overflow:hidden;background:var(--gelo);color:var(--tinta);
-    background-image:linear-gradient(rgba(30,48,94,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(30,48,94,.05) 1px,transparent 1px);background-size:64px 64px}
+    background-image:linear-gradient(rgba(21,38,71,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(21,38,71,.05) 1px,transparent 1px);background-size:64px 64px}
   /* ano de fundação vazado ao fundo */
-  .diferenciais::before{content:"1997";position:absolute;right:-1%;top:24px;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(160px,26vw,360px);line-height:1;color:transparent;-webkit-text-stroke:1.5px rgba(30,48,94,.07);pointer-events:none}
+  .diferenciais::before{content:"1997";position:absolute;right:-1%;top:24px;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(160px,26vw,360px);line-height:1;color:transparent;-webkit-text-stroke:1.5px rgba(21,38,71,.07);pointer-events:none}
   .dif-inner{position:relative;max-width:var(--largura);margin:0 auto;padding:120px 24px}
   .diferenciais .chamada,.clientes .chamada{color:var(--azul-medio)}
   .diferenciais .chamada::before,.clientes .chamada::before,.clientes .chamada::after{background:var(--azul-medio)}
   .dif-topo h2 .destaque{color:var(--azul-medio)}
 
   .dif-lista{list-style:none;margin:56px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 64px}
-  .dif-lista li{position:relative;display:flex;align-items:center;gap:18px;padding:24px 0;border-top:1px solid rgba(30,48,94,.12)}
+  .dif-lista li{position:relative;display:flex;align-items:center;gap:18px;padding:24px 0;border-top:1px solid rgba(21,38,71,.12)}
   .dif-lista li::after{content:"";position:absolute;left:0;top:-1px;width:100%;height:2px;background:var(--azul-medio);transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
   .dif-lista li:hover::after{transform:scaleX(1)}
   .dif-lista .num{flex:none;width:24px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:15px;letter-spacing:.1em;color:var(--azul-medio)}
@@ -231,7 +231,7 @@
   .prod.ativo img{filter:none;transform:scale(1)}
   #produto-fundo-conico img{object-position:72% center}
   #produto-taca img{object-position:70% center}
-  .prod::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(18,29,59,.15) 25%,rgba(18,29,59,.55) 60%,rgba(18,29,59,.96) 100%);transition:opacity .6s}
+  .prod::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(21,38,71,.15) 25%,rgba(21,38,71,.55) 60%,rgba(21,38,71,.96) 100%);transition:opacity .6s}
   .prod-num{position:absolute;z-index:2;top:22px;left:24px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;letter-spacing:.24em;color:rgba(255,255,255,.75)}
   .prod-info{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:28px 24px 30px}
   .prod-info::before{content:"";display:block;width:36px;height:2px;margin-bottom:18px;background:var(--azul-claro);transition:width .6s cubic-bezier(.2,.7,.2,1)}
@@ -267,7 +267,7 @@
     .prod img{filter:none;transform:none}
     .prod-desc{grid-template-rows:1fr;opacity:1}
     .prod-desc p{width:auto}
-    .prod::after{background:linear-gradient(180deg,rgba(18,29,59,.1) 10%,rgba(18,29,59,.75) 45%,rgba(18,29,59,.97) 100%)}
+    .prod::after{background:linear-gradient(180deg,rgba(21,38,71,.1) 10%,rgba(21,38,71,.75) 45%,rgba(21,38,71,.97) 100%)}
     .ficha-itens{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));border-bottom:0}
     .ficha-itens > div,.ficha-itens > div:first-child{padding:22px 0;border-left:0;border-bottom:1px solid rgba(143,179,255,.25)}
   }
@@ -289,15 +289,15 @@
   .faixa:hover .trilho{animation-play-state:paused}
   @keyframes rola{to{transform:translateX(-50%)}}
   .logos{display:flex}
-  .logo-cli{flex:none;width:220px;height:120px;margin-right:20px;padding:24px 32px;display:flex;align-items:center;justify-content:center;background:var(--gelo);border:1px solid rgba(30,48,94,.08);border-radius:6px;transition:background .35s,border-color .35s,transform .35s,box-shadow .35s}
+  .logo-cli{flex:none;width:220px;height:120px;margin-right:20px;padding:24px 32px;display:flex;align-items:center;justify-content:center;background:var(--gelo);border:1px solid rgba(21,38,71,.08);border-radius:6px;transition:background .35s,border-color .35s,transform .35s,box-shadow .35s}
   .logo-cli img{max-width:100%;max-height:100%;object-fit:contain;mix-blend-mode:multiply;filter:grayscale(1);opacity:.55;transition:filter .35s,opacity .35s,transform .35s}
-  .logo-cli:hover{background:var(--branco);border-color:rgba(47,91,196,.35);transform:translateY(-4px);box-shadow:0 18px 40px rgba(30,48,94,.12)}
+  .logo-cli:hover{background:var(--branco);border-color:rgba(84,136,237,.35);transform:translateY(-4px);box-shadow:0 18px 40px rgba(21,38,71,.12)}
   .logo-cli:hover img{filter:none;opacity:1;transform:scale(1.05)}
 
   /* ---------- CONTATO ---------- */
   .contato{position:relative;overflow:hidden;background:var(--azul-escuro);
     background-image:linear-gradient(rgba(143,179,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(143,179,255,.05) 1px,transparent 1px);background-size:52px 52px}
-  .contato::after{content:"";position:absolute;right:-15%;bottom:-35%;width:65%;aspect-ratio:1;background:radial-gradient(circle,rgba(47,91,196,.3),transparent 65%);pointer-events:none}
+  .contato::after{content:"";position:absolute;right:-15%;bottom:-35%;width:65%;aspect-ratio:1;background:radial-gradient(circle,rgba(84,136,237,.3),transparent 65%);pointer-events:none}
   .cont-inner{position:relative;z-index:1;max-width:var(--largura);margin:0 auto;padding:120px 24px}
   .cont-topo{border-color:rgba(143,179,255,.18)}
   .cont-topo h2 .destaque{color:var(--azul-claro)}
@@ -382,7 +382,7 @@
     .topo-inner{height:72px}
     .logo img{height:52px}
     .menu{top:72px;max-height:calc(100vh - 72px);overflow-y:auto}
-    .hero::after{background:rgba(18,29,59,.80)}
+    .hero::after{background:rgba(21,38,71,.80)}
     .numeros{gap:20px}
     .chamada{font-size:15px;letter-spacing:.3em;gap:12px}
     .chamada::before,.clientes .chamada::after{width:20px}
